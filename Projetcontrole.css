@@ -5,8 +5,7 @@
     align-items: center;
     background-color:#ef8b7b;
     height: 40px;
-    flex-wrap: wrap;
-
+    
 }
 .titre{
     display: flex;
@@ -14,6 +13,7 @@
     align-items: center;
     background-color:#ef8b7b;
     color: white;
+    
   
    
 }
@@ -26,7 +26,7 @@
     background-color:#ef8b7b;
     justify-content:space-around;
     align-items: center;
-    flex-wrap: wrap;
+    
   
 }
 
@@ -59,7 +59,7 @@
 }
 header{
     background-color: white;
-    flex-wrap: wrap;
+   
     
 }
 .image {
@@ -71,6 +71,9 @@ header{
    animation-iteration-count: infinite;
    
 }
+#nav{
+    margin-top: 20px;
+}
 @keyframes animate{
     50%{
         transform: translateY(20px);
@@ -81,9 +84,9 @@ header{
     font-size: 50px;
     position: relative;
     bottom: 300px; left: 80px;
+    font-family: Georgia, serif;
     font-style: italic;
     color: black;
-    
 
 }
 .texte{
@@ -108,18 +111,18 @@ button{
 button:hover{
     width: 150px;
     height: 60px;
-    background:linear-gradient(#00ffff, rgb(197, 16, 213));
+    background:linear-gradient(#f683f8, rgb(233, 136, 206));
     color: black;
 }
 .robes{
     width:1200px;
     height:600px;
-    background:linear-gradient(60deg, #f1e6e2,palevioletred);
+    background:linear-gradient(60deg, #f1e6e2,rgb(209, 139, 233));
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 95px;
     box-shadow: 0px 0px 10px #ef8b7b,
     0px 0px 10px #ef8b7b inset;
-    border: 2px solid #ef8b7b ;
+    border: 2px solid rgb(209, 139, 233) ;
     border-radius: 20px;
     
 }
@@ -131,6 +134,7 @@ button:hover{
     box-shadow: 5px  5px 5px 5px black;
 
 }
+                                                                                                   
 .robe1{
     position: relative;
     left: 850px;
@@ -246,16 +250,15 @@ button:hover{
     0px 0px 10px #ef8b7b inset;
     border: 2px solid #ef8b7b ;
     border-radius: 20px;
+}   
+.item1:hover{
+    transform: scale(1.1);
+    
+}  
 
-}
 .box1{
-    width: 200px;
-    height: 50px;
     color:black ;
-   
 }
-
-
 
 .page_noire{
     background-color: black;
@@ -268,7 +271,7 @@ button:hover{
     line-height: 30px;
 }
 .about{
-    color:#ef8b7b;
+    color:palevioletred;
     
 }
 .lesmarques{
@@ -279,7 +282,7 @@ button:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
     
     
 }
@@ -303,8 +306,73 @@ button:hover{
     border-radius: 20px;
 }
 .but button:hover{
-    background:bisque;
-    color: white;
-  transform: translate(0px,-5px);
+  transform:scale(1.05);
 }
-
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.box2{
+    color: rgb(209, 139, 233);
+    padding-top: 10px; padding-left: 30px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.box1{
+    padding-top: 10px; 
+    padding:2px; padding-left: 30px;
+   
+}
+.compte1{
+    
+    position: relative;
+    top: 85px;
+}
+.compte2{
+    
+    position: relative;
+    top: 100px;
+}
+.compte3{
+    
+    position: relative;
+    top: 100px;
+}
+@media screen and {
+    body{
+        width: 720px;
+        height: 1600px;
+    }
+}
